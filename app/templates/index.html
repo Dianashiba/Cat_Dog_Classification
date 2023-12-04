@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>猫狗分类器o_O</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="imgBx">
+            {% if result %}
+            <img src="{{link}}">
+            <br>
+            <h2>识别结果为{{ result }}</h2>
+            {% else %}
+            <img src="../static/imgs/kisskiss.jpg">
+            {% endif %}
+        </div>
+        <div class="content">
+            <div class="details">
+                {% if result %}
+                <h2 class="output">识别结果为{{ result }}!</h2>
+                {% endif %}
+                <h2>Cat & Dog classification<br><span>Choose an img and Upload</span></h2>
+                <form class="actionBtn" action="/" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" id="fileInput" style="display: none;" accept="image/jpeg, image/png">
+                    <input type="submit" name="submit" id="fileSubmit" style="display: none;">
+                </form>
+                <div class="actionBtn">
+                    <button type="file" onclick="document.getElementById('fileInput').click()">Choose</button>
+                    <button type="submit" onclick="document.getElementById('fileSubmit').click()">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <!-- Diana live2d -->
+    <script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/TweenLite.js"></script>
+    <!-- Copyrighted cubism SDK -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <!-- Load Pixi (dependency for cubism 2/4 integrated loader) -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.6/dist/pixi.min.js"></script>
+    <!-- Load cubism 4 integrated loader -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.3.1/dist/cubism4.min.js"></script>
+    <!-- Load pio and alternative loader -->
+    <!-- 不配置cdn了,  就直接用现成的cdn了-->
+    <link href="https://a.vincent1230.top/211214_JiaRanLive2D/pio.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio_sdk4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/load.js"></script>
+</footer>
+<p class="fixed-footer">Designed by <a href="https://space.bilibili.com/89524553">Dianashiba</a></p>
+
+</html>
