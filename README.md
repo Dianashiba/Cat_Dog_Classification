@@ -12,9 +12,9 @@
 
 ![](https://raw.githubusercontent.com/Dianashiba/piclib/main/Dog_result.png)
 
-![](img/Cat_result.png)
+![](https://raw.githubusercontent.com/Dianashiba/piclib/main/Cat_result.png)
 
-## 环境信息
+## 环境信息Cat
 
 * Python版本： 3.10.11
 * Pytorch版本：2.1.1+cu121
