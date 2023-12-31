@@ -14,7 +14,7 @@
 
 ![](https://raw.githubusercontent.com/Dianashiba/piclib/main/Cat_result.png)
 
-## 环境信息Cat
+## 环境信息
 
 * Python版本： 3.10.11
 * Pytorch版本：2.1.1+cu121
